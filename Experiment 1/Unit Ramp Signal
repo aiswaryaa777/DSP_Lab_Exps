@@ -1,0 +1,26 @@
+clc;
+clf;
+close all;
+clear all;
+
+n1 = input('Enter the starting point of signal: ');
+n2 = input('Enter the end point of signal: ');
+
+sample_points = -n1:1:n2;       % Generate sample points from -n1 to n2 with a step size of 1
+amp_1 = zeros(1, n1+1);         % Create an array of zeros of length n1+1 for the negative part (before ramp starts)
+amp_2 = 1:n2;                   % Generate linearly increasing values from 1 to n2 for the ramp signal
+amplitude = [amp_1 amp_2];      % Concatenate the zeros (amp_1) and the ramp values (amp_2) to form the full amplitude array
+
+subplot(121);
+plot(sample_points, amplitude);
+grid on;
+xlabel('time');
+ylabel('amplitude');
+title('Ramp Signal - Continuous Plot');
+
+subplot(122);
+stem(sample_points, amplitude);
+grid on;
+xlabel('time');
+ylabel('amplitude');
+title('Ramp Signal - Discrete Plot');
