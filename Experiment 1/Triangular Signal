@@ -1,0 +1,25 @@
+clc;
+clf;
+close all;
+clear all;
+
+am = input('Enter amplitude: ');      
+fm = input('Enter frequency: ');      
+cyc = input('Enter no: of Cycles: '); 
+
+t = 0:(1/(50*fm)):(cyc/fm);                 % Generate time values with a step size of (1/(50*fm))
+amp = am * sawtooth(2 * pi * fm * t, 0.5);  % Generate a triangular wave using the sawtooth function with a 0.5 duty cycle
+
+subplot(211);
+plot(t, amp);
+grid on;
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Triangular Wave - Continuous Plot');
+
+subplot(212);
+stem(t, amp);
+grid on;
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Triangular Wave - Discrete Plot');
