@@ -1,0 +1,21 @@
+clc;
+clf;
+close all;
+clear all;
+
+am = input('Enter amplitude: ');   
+fm = input('Enter frequency: ');   
+cyc = input('Enter no: of Cycles: ');   % Input the number of cycles you want the signal to complete
+t = 0:(1/(50*fm)):(cyc/fm);             % Generate time values from 0 to (cyc/fm) with a step size of (1/(50*fm)), ensuring 50 points per period
+amp = am * sin(2*pi*fm*t);              % Calculate the amplitude of the sine wave using the formula am * sin(2*pi*fm*t)
+
+subplot(211);
+plot(t,amp);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
+subplot(212);
+stem(t,amp);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
