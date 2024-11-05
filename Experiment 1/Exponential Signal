@@ -1,0 +1,23 @@
+clc;
+clf;
+close all;
+clear all;
+
+n1=input('Starting point of the signal: ');
+amp=input('Amplitude of signal: ');
+dec_fact=input('Decaying factor: ');
+
+sam = 0:1:n1-1;                             % Generate sample points from 0 to n1-1 with a step size of 1
+amplitude = amp * exp(-dec_fact * sam);     % Calculate the exponentially decaying signal using the formula amp * exp(-dec_fact * t)
+title('Exponential Signal');                % Set the title for the plot
+
+subplot(211);
+plot(sam,amplitude);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
+subplot(212);
+stem(sam,amplitude);
+grid on;
+xlabel('Samples');
+ylabel('Amplitude');
