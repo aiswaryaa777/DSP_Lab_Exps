@@ -1,0 +1,9 @@
+------3. Time Reversal Property----
+Enter the sequence : [1 2 3 4]
+DFT of x(n) :
+10.0000+0.0000i -2.0000-2.0000i -2.0000+0.0000i -2.0000+2.0000i
+DFT of x(N-n) :
+10.0000+0.0000i -2.0000+2.0000i -2.0000+0.0000i -2.0000-2.0000i
+DFT of x(N-n) by property :
+10.0000+0.0000i -2.0000+2.0000i -2.0000+0.0000i -2.0000-2.0000i
+Time reversal property of DFT is verified
