@@ -1,0 +1,14 @@
+------6. Circular Convolution Property-----
+Enter the 1st sequence : [1 2 3 4]
+Enter the 2nd sequence : [1 2 1 2]
+DFT of x1 :
+10.0000+0.0000i -2.0000-2.0000i -2.0000+0.0000i -2.0000+2.0000i
+DFT of x2 :
+6.0000+0.0000i -0.0000+0.0000i -2.0000+0.0000i 0.0000+0.0000i
+DFT of convolution of x1 and x2 :
+60.0000+0.0000i -0.0000+0.0000i 4.0000+0.0000i 0.0000+0.0000i
+DFT of convolution of x1 and x2 by property :
+60.0000+0.0000i 0.0000+0.0000i 4.0000-0.0000i -0.0000+0.0000i
+Circular Convolution property of DFT is verified
+
+
