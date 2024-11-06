@@ -1,0 +1,10 @@
+---- 2. Linearity Property-----
+Enter the 1st sequence : [1 2 3 4]
+Enter the 2nd sequence : [1 2 1 2]
+Enter 1st scalar value a : 2
+Enter 2nd scalar value b : 5
+Y1 =
+50.0000+0.0000i -4.0000-4.0000i -14.0000+0.0000i -4.0000+4.0000i
+Y2 =
+50.0000+0.0000i -4.0000-4.0000i -14.0000+0.0000i -4.0000+4.0000i
+Linearity property of DFT is verified
