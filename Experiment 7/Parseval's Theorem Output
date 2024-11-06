@@ -1,0 +1,10 @@
+------8. Parseval’s Theorem----
+Enter the sequence : [1 2 3 4]
+DFT of x :
+10.0000+0.0000i -2.0000-2.0000i -2.0000+0.0000i -2.0000+2.0000i
+Sum of |x|^2 :
+30
+1/N * Sum of |DFT(x)|^2 :
+30
+Parseval’s Theorem of DFT is verified
+
