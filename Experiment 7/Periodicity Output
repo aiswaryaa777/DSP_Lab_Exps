@@ -1,0 +1,7 @@
+-----1. Periodicity Property-----
+Enter the sequence : [1 2 3 4]
+DFT of input in 1st period (1 to N):
+10.0000+0.0000i -2.0000-2.0000i -2.0000+0.0000i -2.0000+2.0000i
+DFT of input in 2nd period (N+1 to 2N):
+10.0000-0.0000i -2.0000-2.0000i -2.0000+0.0000i -2.0000+2.0000i
+Periodicity Property of DFT is verified
