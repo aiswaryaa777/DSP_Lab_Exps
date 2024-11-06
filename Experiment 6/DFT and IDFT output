@@ -1,0 +1,30 @@
+Enter x values: [1 1 0 0]
+DFT
+  Columns 1 through 3
+      2.0000 + 0.0000i   1.0000 - 1.0000i   0.0000 - 0.0000i
+
+  Column 4
+       1.0000 + 1.0000i
+
+Verification
+  Columns 1 through 3
+       2.0000 + 0.0000i   1.0000 - 1.0000i   0.0000 + 0.0000i
+
+  Column 4
+       1.0000 + 1.0000i
+
+IDFT
+
+  Columns 1 through 3
+       1.0000 - 0.0000i   1.0000 + 0.0000i  -0.0000 + 0.0000i
+
+  Column 4
+       0.0000 + 0.0000i
+
+Verification
+  Columns 1 through 3
+       1.0000 - 0.0000i   1.0000 + 0.0000i   0.0000 - 0.0000i
+
+  Column 4
+       0.0000 - 0.0000i
+
